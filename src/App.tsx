@@ -56,7 +56,7 @@ function App() {
         </a>
         <a 
           href={`https://www.tumblr.com/widgets/share/tool?posttype=quote&tags=quotes,freecodecamp&caption=${quote.quote}`}
-          id="tweet-quote"
+          id="#"
           style={{
             backgroundColor: randomColor,
             marginRight: "10px",
