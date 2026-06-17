@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import quotes from "./assets/quotes.json"
 import './App.css'
-import { FaQuoteLeft, FaQuoteRight, FaTwitter } from 'react-icons/fa';
+import { FaQuoteLeft, FaQuoteRight, FaTwitter, FaTumblr } from 'react-icons/fa';
 
 interface Quote {
   quote: string;
@@ -53,6 +53,17 @@ function App() {
           }}
         >
           <FaTwitter color="white" />
+        </a>
+        <a 
+          href={`https://www.tumblr.com/widgets/share/tool?posttype=quote&tags=quotes,freecodecamp&caption=${quote.quote}`}
+          id="tweet-quote"
+          style={{
+            backgroundColor: randomColor,
+            marginRight: "10px",
+            transition
+          }}
+        >
+          <FaTumblr color="white" />
         </a>
         <button id="new-quote" onClick={changeQuote} style={{backgroundColor: randomColor, transition}}>New quote</button>
       </div>
